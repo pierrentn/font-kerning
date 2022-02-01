@@ -8,7 +8,7 @@ export default defineConfig(({command, mode }) => {
     // root: 'src',
     build: {
       emptyOutDir: true,
-      outDir: '../dist'
+      outDir: './dist'
     }
   }
 });
