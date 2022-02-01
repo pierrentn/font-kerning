@@ -1,18 +1,19 @@
-import { resolve } from 'path'
-import copy from 'rollup-plugin-copy'
+import { defineConfig } from 'vite'
 
-const config = {
-  plugins: [
-    copy({
-      targets: [
-        { src: './node_modules/@company/css-library/assets/fonts/**/*', dest: 'public/fonts' },
-        { src: './node_modules/@company/css-library/assets/img/**/*', dest: 'public/img' }
-      ]
-    })
-  ],
-  alias: {
-    '@': resolve(__dirname, 'src')
-  }
-}
+// vite.config.js
+// export default defineConfig(({command, mode }) => {
+//   return {
+//     assetsDir: 'res',
+//     publicDir: 'public',
+//     assetsInclude: ['**/*.ttf'],
 
-export default config
+//     // root: 'src',
+//     build: {
+//       emptyOutDir: true,
+//       outDir: './dist'
+//     }
+//   }
+// });
+export default {
+
+};
