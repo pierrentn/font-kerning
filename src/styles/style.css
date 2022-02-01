@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "FuturaNow";
+  src: url("./assets/fonts/FuturaNowVar-Roman.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+p {
+  font-family: FuturaNow;
+  font-size: 8vw;
+  color: white;
+  font-variation-settings: "wght" 900, "wdth" 75, "opsz" 24;
+  font-kerning: normal;
+}
+
+h1 {
+  font-family: FuturaNow;
+  color: white;
+  font-variation-settings: "wght" 900, "wdth" 75, "opsz" 24;
+  font-kerning: normal;
+  font-size: 22vw;
+  text-transform: uppercase;
+}
